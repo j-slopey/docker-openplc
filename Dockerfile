@@ -6,7 +6,8 @@ USER root
 RUN apt-get update && apt-get install -y \
 	build-essential \	
 	git \
-	wget
+	wget \ 
+ 	net-tools
 
 # Install wiringpi dependency
 RUN wget https://github.com/WiringPi/WiringPi/releases/download/3.16/wiringpi_3.16_arm64.deb && \
