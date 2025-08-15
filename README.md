@@ -4,7 +4,7 @@ docker build -t docker-openplc .
 ```
 To run:
 ```
-docker run -d -p 8080:8080 --name openplc docker-openplc
+docker run -d --privileged -p 8080:8080 -p 502:502 --name openplc docker-openplc
 ```
 
 (Have not progressed to the point of making a volume)
